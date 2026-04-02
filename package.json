@@ -1,0 +1,37 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project 1: Single Page Applications",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open --port 3000",
+    "build": "vite build",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.8",
+    "@mui/system": "^5.11.8",
+    "axios": "^1.6.0",
+    "axios-mock-adapter": "^1.22.0",
+    "express": "^4.18.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "vite": "^5.0.8"
+  }
+}
