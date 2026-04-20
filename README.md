@@ -1,57 +1,56 @@
-# Project 1: Single Page Applications
+npm i @tanstack/react-query
+npm i @tanstack/react-query-devtools
+npm install express-session
+npm install bcrypt
 
-A modern React photo-sharing application built with Vite, Axios Mock Adapter and Material-UI.
+❗ Rule 1: NO committing directly to main
 
-## Setup
+You must NOT do this:
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+git push origin main   ❌
 
-2. Start development:
-   ```bash
-   npm run dev
-   ```
+Instead:
 
-The app will open at `http://localhost:3000`
+git checkout -b feature/auth-backend
 
-## How It Works
+❗ Rule 2: Use feature branches
 
-The project has **two phases**:
+Examples:
 
-### **Mock Data (Start Here)**
+feature/auth-backend
+feature/login-ui
+feature/tanstack-query
+feature/comments
+❗ Rule 3: Use Pull Requests (PRs)
 
-The app works immediately with mock data. No server needed!
+Workflow:
 
-**What happens:**
-1. `photoShare.jsx` imports `./lib/mockSetup.js`
-2. Mock setup intercepts all API calls
-3. Returns mock data from `modelData/photoApp.js`
-4. App works without any backend
+Create branch
+Make changes
+Push branch
+Open PR on GitHub
+Partner reviews + approves
+Merge into main
+❗ Rule 4: BOTH partners must contribute
 
+The grader will check:
 
+commit history
+PRs
+authors
 
-## API Endpoints
+If one person barely commits → they lose points
 
-The server provides these endpoints:
-- `GET /test/info` - Schema information
-- `GET /user/list` - All users
-- `GET /user/:id` - Specific user details
-- `GET /photosOfUser/:id` - User's photos with comments
+❗ Rule 5: Each partner needs at least 2 PRs
 
-## Development Commands
+So minimum:
 
-```bash
-npm run dev      # Start frontend development
-npm run build    # Build for production
-npm run lint     # Check code quality 
-```
+You: 2 PRs
+Partner: 2 PRs
+❗ Rule 6: Meaningful commits
 
-## Technology Stack
+BAD:
 
-- **React 18** - Modern React with hooks
-- **Vite** - Fast build tool and dev server
-- **Material-UI** - React component library
-- **React Router** - Client-side routing
-- **Axios** - HTTP client with mock adapter
+fix
+stuff
+asdf
